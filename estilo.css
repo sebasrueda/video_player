@@ -1,0 +1,71 @@
+@import './buttons.css';
+
+body
+{
+    background-color: #26B4BC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reproductor
+{
+    margin-block-start: 100px;
+    position: relative;
+}
+.reproductor:hover .capa-reproductor
+{
+    opacity: 1;
+}
+
+.capa-reproductor
+{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .3s opacity;
+}
+
+.reproductor video
+{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    vertical-align: middle;
+    object-fit: cover;
+}
+
+.contenedor
+{
+    max-inline-size: 900px;
+    margin: auto;
+}
+
+.botones-reproductor
+{
+    position: absolute;
+    inset: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.titulo-video
+{
+    color: #fff;
+    position: absolute;
+    inset-block-start: 0px;
+    inset-inline-start: 20px;
+}
+
+.progreso-reproductor
+{
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline: 0;
+    display: flex;
+    padding: 10px;
+}
+
+.progreso-reproductor input
+{
+    flex: 1;
+}

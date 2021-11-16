@@ -1,0 +1,33 @@
+.boton
+{
+    inline-size: 32px;
+    block-size: 32px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.boton:active
+{
+    transform: scale(.9);
+}
+
+#play
+{
+    background-image: url(images/play.svg);
+}
+
+#pausa
+{
+    background-image: url(images/pause.svg);
+}
+
+#atras
+{
+    background-image: url(images/-10.svg);
+}
+
+#adelante
+{
+    background-image: url(images/+10.svg);
+}
